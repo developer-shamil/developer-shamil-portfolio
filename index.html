@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamil KP | Passionate Software Developer & Node.js Enthusiast</title>
+    <meta name="description" content="Portfolio of Shamil KP, a passionate software developer specializing in Node.js, HTML, CSS, and interactive web applications. Explore projects, skills, and services.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Animated Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Shamil KP <span class="logo-accent">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <!-- Hamburger Menu Trigger -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle Mobile Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Available for Work</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Shamil KP</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typewriter-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate software developer focused on building fast, modern backend architectures with <strong class="tech-highlight">Node.js</strong> and designing intuitive, responsive user experiences with clean <strong class="tech-highlight">HTML & CSS</strong>.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glowing-sphere-container">
+                        <div class="sphere-glow"></div>
+                        <div class="code-cube">
+                            <div class="cube-face front">const fs = require('fs');</div>
+                            <div class="cube-face back">http.createServer()</div>
+                            <div class="cube-face left">&lt;html&gt;</div>
+                            <div class="cube-face right">display: grid;</div>
+                            <div class="cube-face top">npm install</div>
+                            <div class="cube-face bottom">console.log()</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="number">01.</span> About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Hello! I am Shamil KP, a software developer driven by the thrill of turning ideas into functional, interactive code. My journey started with building web interfaces using <strong>HTML & CSS</strong>, where I developed an eye for detail, grid layouts, and smooth animations.
+                        </p>
+                        <p>
+                            Recently, I stepped into backend development by mastering <strong>Node.js</strong>. Learning Node.js unlocked a new level of excitement—enabling me to build fully functional APIs, manage server-side structures, handle databases, and understand asynchronous program logic.
+                        </p>
+                        <p>
+                            I enjoy connecting both ends of development—creating clean backend servers in Node.js and binding them seamlessly with pixel-perfect, highly animated frontend components. I strive to write readable, performant code.
+                        </p>
+                    </div>
+                    <div class="about-interactive">
+                        <!-- Simulated Code Editor File -->
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="file-name">developer.json</span>
+                            </div>
+                            <pre class="code-content"><code>{
+  <span class="key">"name"</span>: <span class="string">"Shamil KP"</span>,
+  <span class="key">"bio"</span>: <span class="string">"Coding With Music❤️‍🩹"</span>,
+  <span class="key">"role"</span>: <span class="string">"Software Developer"</span>,
+  <span class="key">"platforms"</span>: [
+    <span class="string">"Mobile Apps"</span>,
+    <span class="string">"Web Apps"</span>,
+    <span class="string">"Desktop Apps"</span>
+  ],
+  <span class="key">"skills"</span>: [
+    <span class="string">"Node.js"</span>,
+    <span class="string">"JavaScript"</span>,
+    <span class="string">"HTML5/CSS3"</span>,
+    <span class="string">"Bootstrap"</span>
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="number">02.</span> Skills & Expertise</h2>
+                <p class="section-desc">Here are the core technologies I utilize to bring digital ideas to life.</p>
+                
+                <div class="skills-grid">
+                    <!-- Skill Card 1: Node.js -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Node.js Backend</h3>
+                        <p>Designing RESTful APIs, routing, asynchronous file operations, and server configurations using modern JavaScript protocols.</p>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- Skill Card 2: HTML & CSS -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                        </div>
+                        <h3>Responsive Frontend</h3>
+                        <p>Structuring clean HTML5 semantics and designing responsive, high-performance styling using CSS Grid, Flexbox, and transitions.</p>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+
+                    <!-- Skill Card 3: JavaScript -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>JavaScript (ES6+)</h3>
+                        <p>Crafting application logic, standard algorithms, promises, DOM interactions, event systems, and dynamic canvas rendering.</p>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+
+                    <!-- Skill Card 4: Dev Tools -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <h3>Workflow & Tools</h3>
+                        <p>Version control using Git and GitHub, debugging node environments, script automation, package management via npm, and code optimization.</p>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 75%;"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="number">03.</span> Services</h2>
+                <p class="section-desc">Comprehensive solutions designed to build robust and beautiful web systems.</p>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-box">
+                        <div class="service-decor">01</div>
+                        <h3>API & Back-end Architectures</h3>
+                        <p>Creating robust Node.js servers, handling file-system database logs, building structured APIs, handling HTTP requests, and maintaining security standards.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-box">
+                        <div class="service-decor">02</div>
+                        <h3>Responsive UI Layouts</h3>
+                        <p>Designing modern templates that fit perfectly on mobile screens, tablets, and wide desktop monitors using flex grid techniques, clean code, and zero frame layouts.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-box">
+                        <div class="service-decor">03</div>
+                        <h3>Interactive Web Logic</h3>
+                        <p>Powering HTML websites with lightweight, non-blocking vanilla Javascript to provide animations, lazy-loaded structures, forms, and custom canvas visualizations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Live Console Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="number">04.</span> Projects & Live Console</h2>
+                <p class="section-desc">Explore projects I've built, and run simulated Node.js scripts in the live console.</p>
+
+                <!-- Project Cards Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <h4>eCommerce-website</h4>
+                                <p>A modern e-commerce storefront layout using semantic structure, standard alignment grids, and custom items navigation.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS Grid</span>
+                                    <span>Responsive</span>
+                                </div>
+                                <a href="https://github.com/developer-shamil/eCommerce-website" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>View GitHub Repo</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                            <div class="project-img-placeholder api-design">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="20" height="20" x="2" y="2" rx="2"/><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="M8 12h.01"/></svg>
+                                <span>eCommerce Webpage</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <h4>mini-eCommerce-App</h4>
+                                <p>An interactive shopping application focusing on web layout templates, flex setups, and hover indicators.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS Flexbox</span>
+                                    <span>UX Design</span>
+                                </div>
+                                <a href="https://github.com/developer-shamil/mini-eCommerce-App" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>View GitHub Repo</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                            <div class="project-img-placeholder UI-design">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="M20 12h2"/><path d="m19.1 4.9-1.4 1.4"/><path d="M17.5 17.5c.3-.3.4-.7.5-1.1.2-.9-.3-1.9-1.1-2.2H16c-1.1 0-2-.9-2-2v-.5c0-.8-.7-1.3-1.5-1.3H11c-1.1 0-2-.9-2-2V7.5c0-.8-.7-1.5-1.5-1.5H7.1C6.3 6 5.8 6.5 5.8 7.3c0 .8.6 1.5 1.4 1.7h.6c1.1 0 2 .9 2 2v.5c0 .8.7 1.3 1.5 1.3H12c.6 0 1 .4 1 1v.5c0 .6-.4 1-1 1h-.5c-.8 0-1.5.7-1.5 1.5v.6c0 .8.5 1.4 1.3 1.4H13c.6 0 1 .4 1 1v.2c0 .8-.5 1.3-1.3 1.3H11c-.8 0-1.5.5-1.7 1.2-.2.6.1 1.2.7 1.5l1 .5c.6.3 1.3.3 1.9 0l1.4-.7c.8-.4 1.1-1.3.8-2.1z"/><circle cx="12" cy="12" r="10"/></svg>
+                                <span>eCommerce Web App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <h4>home-page</h4>
+                                <p>A clean, animated landing page layout using modern CSS styling, structured layouts, and smooth navigation triggers.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS3</span>
+                                    <span>Transitions</span>
+                                </div>
+                                <a href="https://github.com/developer-shamil/home-page" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>View GitHub Repo</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                            <div class="project-img-placeholder anim-design">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9V15"/><path d="M9 6h6"/><path d="M6 9v6"/><path d="M9 18h6"/></svg>
+                                <span>Animated Home Page</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulated Node.js Playground Console -->
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="window-controls">
+                            <span class="control-dot red"></span>
+                            <span class="control-dot yellow"></span>
+                            <span class="control-dot green"></span>
+                        </div>
+                        <div class="terminal-title">shamil-kp@node-playground:~</div>
+                        <div class="terminal-tab">index.js</div>
+                    </div>
+                    
+                    <div class="terminal-body-grid">
+                        <!-- Script Selector Sidebar -->
+                        <div class="terminal-sidebar">
+                            <span class="sidebar-title">Select Script</span>
+                            <button class="script-btn active" data-script="server">
+                                <span class="file-icon">JS</span> server.js
+                            </button>
+                            <button class="script-btn" data-script="fileReader">
+                                <span class="file-icon">JS</span> fileReader.js
+                            </button>
+                            <button class="script-btn" data-script="apiSimulator">
+                                <span class="file-icon">JS</span> apiSimulator.js
+                            </button>
+                        </div>
+                        
+                        <!-- Script Display & Output -->
+                        <div class="terminal-editor-pane">
+                            <div class="code-viewer">
+                                <div class="editor-header">
+                                    <span>Source Code</span>
+                                    <button id="run-script-btn" class="run-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                        Run Node Script
+                                    </button>
+                                </div>
+                                <!-- Script 1: Server Code -->
+                                <pre id="code-server" class="script-code active"><code>const http = require('http');
+const PORT = 3000;
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello from Shamil\'s Node server!');
+});
+
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}...`);
+});</code></pre>
+                                <!-- Script 2: FileReader Code -->
+                                <pre id="code-fileReader" class="script-code"><code>const fs = require('fs');
+
+console.log('Opening database.txt...');
+
+fs.readFile('database.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error reading database file!');
+    return;
+  }
+  console.log('--- FILE CONTENT ---');
+  console.log(data);
+  console.log('--------------------');
+  console.log('Read completed successfully.');
+});</code></pre>
+                                <!-- Script 3: API Simulator Code -->
+                                <pre id="code-apiSimulator" class="script-code"><code>const https = require('https');
+
+console.log('Fetching developer profile...');
+
+setTimeout(() => {
+  const profile = {
+    id: 104,
+    name: 'Shamil KP',
+    status: 'Active',
+    stack: ['Node.js', 'HTML', 'CSS', 'JavaScript']
+  };
+  console.log('HTTP/1.1 200 OK');
+  console.log('Response Payload:', JSON.stringify(profile, null, 2));
+}, 1200);</code></pre>
+                            </div>
+                            
+                            <!-- Console Output -->
+                            <div class="console-screen">
+                                <div class="console-header">Console Output (Terminal)</div>
+                                <div id="console-output" class="console-output-text">
+                                    <p class="sys-msg">Select a script above and click "Run Node Script" to execute.</p>
+                                    <p class="console-prompt"><span class="prompt-user">shamil-kp@node-playground</span>:<span class="prompt-dir">~</span>$ <span class="typing-dummy"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="number">05.</span> Contact Me</h2>
+                <p class="section-desc">Have a question or want to build a project together? Leave a message!</p>
+                
+                <div class="contact-grid">
+                    <!-- Contact Details Card -->
+                    <div class="contact-info">
+                        <h3>Let's Collaborate</h3>
+                        <p>Feel free to reach out to me via email or through the form. I'm always open to discussing new web architectures, Node.js applications, and design opportunities.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <div class="info-text">
+                                    <span>Email</span>
+                                    <a href="mailto:shamilkp@example.com">shamilkp@example.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div class="info-text">
+                                    <span>Location</span>
+                                    <p>Kerala, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                                <span class="error-msg" id="name-error">Please enter your name.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Hi Shamil, let's work on..." required></textarea>
+                                <span class="error-msg" id="message-error">Please write a message.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <svg class="send-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Shamil KP. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/developer-shamil" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.instagram.com/dev_sh4mil/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://youtube.com/@developer-shamil" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><polygon points="9.7 15 9.7 9 14.5 12 9.7 15"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Submission Feedback Toast -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <svg class="toast-success-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Message sent! Thank you for reaching out.</span>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
